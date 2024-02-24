@@ -22,7 +22,7 @@ h1{
     
 }
 nav ul {
-    list-style-type: upper;
+    
     
 }
 
@@ -82,7 +82,7 @@ nav {
 }
 .img{
     max-width: 70%;
-    padding: 0%;
+    
 }
 
 .logo {
@@ -109,23 +109,23 @@ nav {
 }
 .img-1:hover{
     opacity: 70%; 
+    
 }
 .img-2:hover{
     opacity: 70%;
   
-    
+}
+.img-3:hover{
+    opacity: 70%;
 }
 .seccion1-index {  
 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 2px 0px;
-    grid-auto-flow: row;
+    grid-template-columns: 1fr;
     grid-template-areas:
-      "img-1 img-2 img-3"
-      "img-1 img-2 img-3"
-      "img-5 img-2 img-4";
+      "img-1"
+      "img-3"
+      ;
     
   }
   
@@ -138,10 +138,12 @@ nav {
   .img-4 { grid-area: img-4; }
   
   .img-5 { grid-area: img-5; }
+
+
   
 /*mobile first*/
 
-@media(min-width:380px){
+@media(min-width:400px){
     nav ul{
         width: 100vw;
         justify-content: center;
@@ -156,17 +158,26 @@ nav {
     padding: 20px;
    }
    .img{
-        max-width: 80%;
+        max-width: 30%;
    }
    .container{
     max-width: 40%;
    }
 }
 
-    
 
 
 
-@media (max-width:380px ){
-  
+@media (min-width:768px ){
+    .seccion1-index {  
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+          "img-1 img-2 img-3"
+          "img-1 img-2 img-3"
+          "img-5 img-2 img-4";
+        
+      }
 }
