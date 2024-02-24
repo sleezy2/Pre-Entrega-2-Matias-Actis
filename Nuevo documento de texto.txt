@@ -1,0 +1,5 @@
+Que falta en mi proyecto:
+-Acomodar el nav (incluyendo boostrap si es posible)
+-Mobile first (almenos 2 paginas) diseño responsive con boostrap
+-Meter el proyecto a GITHUB
+-
