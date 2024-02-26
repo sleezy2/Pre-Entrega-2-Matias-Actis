@@ -22,7 +22,7 @@ h1{
     
 }
 nav ul {
-    
+    list-style-type: upper;
     
 }
 
@@ -109,7 +109,7 @@ nav {
 }
 .img-1:hover{
     opacity: 70%; 
-    
+    padding: 10px;
 }
 .img-2:hover{
     opacity: 70%;
@@ -135,10 +135,9 @@ nav {
   
   .img-3 { grid-area: img-3; }
   
-  .img-4 { grid-area: img-4; }
+  /*.img-4 { grid-area: img-4; }
   
-  .img-5 { grid-area: img-5; }
-
+  .img-5 { grid-area: img-5; }*/
 
   
 /*mobile first*/
