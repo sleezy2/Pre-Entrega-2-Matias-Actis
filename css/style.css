@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.boton {
+  width: #011627;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148810353.jpg);
+  color: #f14b4b;
+  padding: 1rem;
+  align-content: space-between; }
+  header h1 {
+    color: #ff0000;
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: #333; }
+
+section {
+  background-image: url(../resources/fondo.png); }
+
+nav ul {
+  list-style-type: upper; }
+  nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+    align-items: center; }
+
+main {
+  padding: 20px; }
+
+.producto, .oferta {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px; }
+  .producto img, .oferta img {
+    max-width: 40%;
+    height: auto; }
+  .producto .precio, .oferta .precio {
+    font-weight: bold;
+    color: #e44d26; }
+  .producto .precio-original, .oferta .precio-original {
+    text-decoration: line-through;
+    color: #777; }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem; }
+
+body header nav a img {
+  display: flex;
+  max-width: 40%; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center; }
+
+.img {
+  max-width: 70%; }
+
+.logo {
+  max-width: 150px; }
+
+.contenedor {
+  display: flex; }
+
+.Boton:hover {
+  color: #ffffff;
+  background-color: #ff0000;
+  padding: 10px; }
+
+.seccion:hover {
+  display: flex;
+  color: #ffffff;
+  background-color: #ff1d30;
+  padding: 10px; }
+
+.img-1:hover {
+  opacity: 70%;
+  padding: 10px; }
+
+.img-2:hover {
+  opacity: 70%; }
+
+.img-3:hover {
+  opacity: 70%; }
+
+.seccion1-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img-1" "img-3"; }
+
+.img-1 {
+  grid-area: img-1; }
+
+.img-2 {
+  grid-area: img-2; }
+
+.img-3 {
+  grid-area: img-3; }
+
+@media (min-width: 400px) {
+  nav ul {
+    width: 100vw;
+    justify-content: center; }
+  .nav {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row; }
+  .seccion {
+    display: flex;
+    padding: 20px; }
+  .img {
+    max-width: 30%; }
+  .container {
+    max-width: 40%; } }
+
+@media (min-width: 768px) {
+  .seccion1-index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img-1 img-2 img-3" "img-1 img-2 img-3" "img-5 img-2 img-4"; } }
+
+.producto {
+  background-color: #ff0000;
+  color: #011627;
+  font-family: monospace;
+  text-align: center;
+  padding: 20px; }
+
+footer {
+  background-color: black; }

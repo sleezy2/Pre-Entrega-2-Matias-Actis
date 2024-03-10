@@ -1,0 +1,23 @@
+.boton {
+	width:$azul;
+	height: 50px;
+	background-color:white;
+	text-align:center;
+	color:black;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fondo-destacado ($color-fondo){
+    background-color: $color-fondo;
+    color: $azul;
+    font-family: monospace;
+    text-align: center;
+    padding: 20px;
+}
