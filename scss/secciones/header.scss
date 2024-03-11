@@ -1,0 +1,16 @@
+// Estilos para el encabezado
+header {
+    background-image: $url-imagen-fondo-header;
+    color: rgb(241, 75, 75);
+    padding: 1rem;
+    align-content: space-between;
+
+    // Estilos para el título
+    h1 {
+        color: $color-rojo;
+        font-family: "Sedgwick Ave Display", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-shadow: $color-gris;
+    }
+}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -19,11 +20,6 @@
   justify-content: center;
   align-items: center; }
 
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0; }
-
 header {
   background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148810353.jpg);
   color: #f14b4b;
@@ -35,6 +31,11 @@ header {
     font-weight: 400;
     font-style: normal;
     text-shadow: #333; }
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0; }
 
 section {
   background-image: url(../resources/fondo.png); }
@@ -147,11 +148,20 @@ nav {
     grid-template-areas: "img-1 img-2 img-3" "img-1 img-2 img-3" "img-5 img-2 img-4"; } }
 
 .producto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #ff0000;
   color: #011627;
   font-family: monospace;
   text-align: center;
   padding: 20px; }
+
+.img-container {
+  display: flex; }
+
+.img-container img {
+  width: 50%; }
 
 footer {
   background-color: black; }

@@ -9,22 +9,7 @@ body {
     padding: 0;
 }
 
-// Estilos para el encabezado
-header {
-    background-image: $url-imagen-fondo-header;
-    color: rgb(241, 75, 75);
-    padding: 1rem;
-    align-content: space-between;
 
-    // Estilos para el título
-    h1 {
-        color: $color-rojo;
-        font-family: "Sedgwick Ave Display", cursive;
-        font-weight: 400;
-        font-style: normal;
-        text-shadow: $color-gris;
-    }
-}
 
 // Estilos para la sección
 section {
@@ -180,8 +165,21 @@ nav {
             "img-5 img-2 img-4";
     }
 }
-
-.producto{
-    @include fondo-destacado(#ff0000); 
+.producto {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include  fondo-destacado(#ff0000); 
 }
+.img-container {
+    display: flex;
+}
+
+.img-container img {
+    width: 50%; 
+}
+
+button {
+    @include boton;
+  }
 
