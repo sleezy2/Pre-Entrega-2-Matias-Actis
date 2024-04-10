@@ -58,7 +58,7 @@ main {
   padding: 20px;
   margin-bottom: 20px; }
   .producto img, .oferta img {
-    max-width: 40%;
+    max-width: 500px;
     height: auto; }
   .producto .precio, .oferta .precio {
     font-weight: bold;
