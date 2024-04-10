@@ -6,6 +6,11 @@
 	color:black;
 	border-radius: 20px;
 	border: 1px solid black;
+        .boton:hover{
+            color: $color-rojo;
+            size: 10px;
+
+        }
 }
 
 .flex-center{

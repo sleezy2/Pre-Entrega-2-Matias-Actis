@@ -169,7 +169,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    @include  fondo-destacado(#ff0000); 
+    background-image: $url-imagen-fondo-prod;
+   
 }
 .img-container {
     display: flex;

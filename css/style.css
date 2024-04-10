@@ -14,6 +14,9 @@
   color: black;
   border-radius: 20px;
   border: 1px solid black; }
+  .boton .boton:hover {
+    color: #ff0000;
+    size: 10px; }
 
 .flex-center {
   display: flex;
@@ -151,17 +154,22 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #ff0000;
-  color: #011627;
-  font-family: monospace;
-  text-align: center;
-  padding: 20px; }
+  background-image: url(.../resources/fondo); }
 
 .img-container {
   display: flex; }
 
 .img-container img {
   width: 50%; }
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
 
 footer {
   background-color: black; }
