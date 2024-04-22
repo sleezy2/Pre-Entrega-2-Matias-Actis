@@ -1,11 +1,42 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; 
+    margin: 0 auto; 
+  }
+  
+label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #0066ff; 
+  }
+
 .boton {
 	width:$azul;
 	height: 50px;
-	background-color:white;
+	background-color:rgb(140, 180, 255);
 	text-align:center;
+    text-decoration: underline;
 	color:black;
 	border-radius: 20px;
-	border: 1px solid black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: auto;
         .boton:hover{
             color: $color-rojo;
             size: 10px;
@@ -13,10 +44,16 @@
         }
 }
 
+.negrita {
+    font-weight: bold;
+  }
+
 .flex-center{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+
 }
 
 @mixin fondo-destacado ($color-fondo){

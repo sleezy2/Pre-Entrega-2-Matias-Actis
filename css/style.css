@@ -6,22 +6,53 @@
   box-sizing: border-box;
   font-family: sans-serif; }
 
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto; }
+
+label {
+  margin-bottom: 5px; }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px; }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #0066ff; }
+
 .boton {
-  width: #011627;
+  width: #083D77;
   height: 50px;
-  background-color: white;
+  background-color: #8cb4ff;
   text-align: center;
+  text-decoration: underline;
   color: black;
   border-radius: 20px;
-  border: 1px solid black; }
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin: auto; }
   .boton .boton:hover {
     color: #ff0000;
     size: 10px; }
 
+.negrita {
+  font-weight: bold; }
+
 .flex-center {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin: auto; }
 
 header {
   background-image: url(https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148810353.jpg);
@@ -51,7 +82,8 @@ nav ul {
     align-items: center; }
 
 main {
-  padding: 20px; }
+  padding: 20px;
+  margin: auto; }
 
 .producto, .oferta {
   border: 1px solid #ddd;
@@ -65,7 +97,8 @@ main {
     color: #e44d26; }
   .producto .precio-original, .oferta .precio-original {
     text-decoration: line-through;
-    color: #777; }
+    color: #777;
+    margin: auto; }
 
 footer {
   background-color: #333;
@@ -154,7 +187,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: url(.../resources/fondo); }
+  background-image: url(.../resources/fondo);
+  margin: auto;
+  max-width: 900px; }
 
 .img-container {
   display: flex; }
@@ -171,5 +206,20 @@ button {
   border-radius: 20px;
   border: 1px solid black; }
 
+#contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px; }
+
+#contacto img {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2; }
+
+#contacto form {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2; }
+
 footer {
-  background-color: black; }
+  background-color: #2E4057;
+  margin: auto;
+  min-height: 85vh; }

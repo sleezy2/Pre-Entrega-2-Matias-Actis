@@ -30,6 +30,8 @@ nav ul {
 // Estilos generales para el contenido principal
 main {
     padding: 20px;
+    margin: auto;
+
 }
 
 // Estilos para los productos y ofertas
@@ -41,6 +43,7 @@ main {
     img {
         max-width: 500px;
         height: auto;
+        
     }
 
     .precio {
@@ -51,6 +54,7 @@ main {
     .precio-original {
         text-decoration: line-through;
         color: #777;
+        margin: auto;
     }
 }
 
@@ -170,6 +174,9 @@ nav {
     align-items: center;
     justify-content: space-around;
     background-image: $url-imagen-fondo-prod;
+    margin: auto;
+    max-width: 900px;
+
    
 }
 .img-container {
@@ -183,4 +190,18 @@ nav {
 button {
     @include boton;
   }
+  #contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
 
+#contacto img {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+#contacto form {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
